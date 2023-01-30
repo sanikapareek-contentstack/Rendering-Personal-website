@@ -1,8 +1,7 @@
 import data from '../../data/header.json' assert {type :'json'};
-console.log(data);
-class Header{
+import Component from './Mount.js';
+class Header extends Component{
     
-
     render(){
         const headerContainer=document.createElement("div");
         const headerLink=document.createElement("a");
@@ -62,15 +61,6 @@ class Header{
     
     }
 
-    mount(el){
-        if(el){
-            el.appendChild(this.render());
-            return;
-        }
-        document.body.appendChild(this.render());
-    }
-
-    
     
 }
 export {Header}
