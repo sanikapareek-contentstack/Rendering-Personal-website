@@ -21,3 +21,11 @@
     margin-right: auto;
 }
 
+@media screen and (max-width:400px) {
+    .bannerContainer h2{
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    
+}
+

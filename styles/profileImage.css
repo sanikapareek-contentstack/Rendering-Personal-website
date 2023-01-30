@@ -1,0 +1,26 @@
+.profileImageContainer{
+    display: block;
+    margin: 0 auto;
+    margin-top: -150px;
+    text-align: center;
+}
+.profileImageContainer img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 0 auto;
+}
+
+.profileImageContainer img:hover{
+    transform: scale(1.13);
+}
+
+@media screen and (max-width:500px) {
+    .profileImageContainer img{
+        width: 180px;
+        height: 180px;
+    }
+    
+}
+
