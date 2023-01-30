@@ -1,0 +1,23 @@
+{
+    "projectHeading":"Projects",
+    "projects":[
+        {
+            "projectName":"YouTube Recommendation System",
+            "skillHeading":"Skills",
+            "skills":["Machine Learning", "Python"],
+            "description":"Analyzing YouTube comments, number of likes, dislikes and total number of views and concluding whether is video is watchable or not."
+        },
+        {
+            "projectName":"Placement Preparation Portal",
+            "skillHeading":"Skills",
+            "skills":["Angular", "MySQL", "Node.js"],
+            "description":"Single platform for praticing both coding questions and aptitude questions so that student don't have to search for different sources for preparation."
+        },
+        {
+            "projectName":"Augmented Reality based App for Education",
+            "skillHeading":"Skills",
+            "skills":["Unity3D"],
+            "description":"AR based application designed for Marathi Alphabets for pre-primary sudents in rural India to make teaching-learning process more interactive and fun."
+        }
+    ]
+}
