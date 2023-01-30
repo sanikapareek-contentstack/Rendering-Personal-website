@@ -1,0 +1,22 @@
+{
+    "logo":"./assets/logo.png",
+    "logo-href":"#",
+    "nav":[
+        {
+            "title":"Profile",
+            "href":"#profile"
+        },
+        {
+            "title":"Education",
+            "href":"#education"
+        },
+        {
+            "title":"Achievements",
+            "href":"#achievements"
+        },
+        {
+            "title":"Projects",
+            "href":"#projects"
+        }
+    ]
+}
