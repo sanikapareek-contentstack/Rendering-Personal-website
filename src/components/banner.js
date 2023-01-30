@@ -9,6 +9,7 @@ class Banner extends Component{
         const bannerDescription=document.createElement("h2");
 
         bannerContainer.classList.add("bannerContainer");
+        bannerContainer.style.backgroundImage=`url(${data.bannerBackgroundImg})`;
 
         bannerContainer.appendChild(bannerHeading);
         bannerContainer.appendChild(bannerDescription);
