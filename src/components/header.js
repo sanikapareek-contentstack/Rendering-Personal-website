@@ -22,29 +22,41 @@ class Header{
         headerLink.classList.add("header-logo");
         headerNav.classList.add("header-nav");
 
+        const headerNavArr=[
+            {
+                title:headerProfile,
+                href:headerProfileLink
+            },
+            {
+                title:headerEducation,
+                href:headerEducationLink
+            },
+            {
+                title:headerAchievement,
+                href:headerAchievementLink},
+            {
+                title:headerProject,
+                href:headerProjectLink
+            }
+        ];
+
         headerContainer.appendChild(headerLink);
         headerLink.appendChild(headerImage);
         headerContainer.appendChild(headerNav);
         headerNav.appendChild(headerUnorderList);
-        headerUnorderList.appendChild(headerProfileLink);
-        headerProfileLink.appendChild(headerProfile);
-        headerUnorderList.appendChild(headerEducationLink);
-        headerEducationLink.appendChild(headerEducation);
-        headerUnorderList.appendChild(headerAchievementLink);
-        headerAchievementLink.appendChild(headerAchievement);
-        headerUnorderList.appendChild(headerProjectLink);
-        headerProjectLink.appendChild(headerProject);
 
+        for(let i=0;i<headerNavArr.length;i++){
+            headerUnorderList.appendChild(headerNavArr[i].href);
+            (headerNavArr[i].href).appendChild(headerNavArr[i].title);
+        }
+        
         headerLink.href=data['logo-href'];
         headerImage.src=data['logo'];
-        headerProfile.innerHTML=data.nav[0].title;
-        headerProfileLink.href=data.nav[0].href;
-        headerEducation.innerHTML=data.nav[1].title;
-        headerEducationLink.href=data.nav[1].href;
-        headerAchievement.innerHTML=data.nav[2].title;
-        headerAchievementLink.href=data.nav[2].href;
-        headerProject.innerHTML=data.nav[3].title;
-        headerProjectLink.href=data.nav[3].href;
+        
+        for(let i=0;i<headerNavArr.length;i++){
+            (headerNavArr[i].title).innerText=data.nav[i].title;
+            (headerNavArr[i].href).href=data.nav[i].href;
+        }
 
         return headerContainer;
     
