@@ -1,0 +1,37 @@
+{
+    "eduactionHeading":"Education",
+    "eduactionInfo":[{
+        "educationHeading":"B.Tech",
+        "institutionHeading":"Name of College",
+        "institutionName":"MIT Academy of Engineering,Pune",
+        "streamHeading":"Stream",
+        "streamType":"Computer Engineering",
+        "marksType":"CGPA",
+        "marks":"9.43",
+        "yearHeading":"Year of Passing",
+        "year":"2023"
+    },
+    {
+        "educationHeading":"CBSE- XII",
+        "institutionHeading":"Name of School",
+        "institutionName":"DAV Public School,Pune",
+        "streamHeading":"Stream",
+        "streamType":"Science",
+        "marksType":"Percentage",
+        "marks":"86.4%",
+        "yearHeading":"Year of Passing",
+        "year":"2019"
+    },
+    {
+        "educationHeading":"CBSE- X",
+        "institutionHeading":"Name of School",
+        "institutionName":"DAV Public School,Pune",
+        "streamHeading":"Stream",
+        "streamType":"All subjects",
+        "marksType":"CGPA",
+        "marks":"10",
+        "yearHeading":"Year of Passing",
+        "year":"2017"
+    }]
+}
+    
