@@ -1,5 +1,8 @@
-import data from '../../data/header.json' assert {type :'json'};
+import data from '../../data/banner.json' assert {type :'json'};
 
 class Banner{
-    
+    render(){
+        const bannerContainer=document.createElement("div");
+        
+    }
 }
