@@ -8,6 +8,7 @@ import { Education } from "./components/education.js";
 import { Cards } from "./components/cards.js";
 import { Project } from "./components/projects.js";
 import { Achievement } from "./components/achievements.js";
+import { Footer } from "./components/footer.js";
 
 const headerComponent=new Header();
 headerComponent.mount(document.getElementById("root"));
@@ -43,6 +44,9 @@ for(let i=0;i<project.projects.length;i++){
     const projectCard=new Cards();
     projectCard.mount(document.querySelector(".projectCards"),project.projects[i],"project");
 }
+
+const footerComponent=new Footer();
+footerComponent.mount(document.getElementById("root"));
 
 
 
