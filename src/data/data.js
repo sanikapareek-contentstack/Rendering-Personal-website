@@ -121,7 +121,7 @@ const achievements={
     achievements:["Bagged second prize in 'VirtualStorm: Hackathon 1.0' organized by 'IIM Sirmaur' in the year 2022.","Bagged thrid prize in 'Datathon' sponsored by 'Bajaj Finserv' held at MITAOE in the year 2022."]
 }
 
-const projects={
+const project={
     projectHeading:"Projects",
     projects:[
         {
@@ -151,4 +151,4 @@ const footer={
     footer:"Copyright @Sanika Pareek 2023"
 }
 
-export {header,banner,profileImage,profile,education,achievements,projects,footer}
+export {header,banner,profileImage,profile,education,achievements,project,footer}

@@ -29,13 +29,14 @@ class Cards extends Component{
                 cardHeading.innerText=data.projectName;
                 cardPara.innerHTML=`<strong>${data.skillHeading}</strong>: `;
                 for(let i=0;i<data.skills.length;i++){
-                    if((data.project.skills)-i-1===0){
+                    if((data.skills.length)-i-1===0){
                         cardPara.innerHTML=cardPara.innerHTML+`${data.skills[i]} <br><br>`;
                     }else{
                         cardPara.innerHTML=cardPara.innerHTML+`${data.skills[i]}, `
                     }
                     
                 }   
+                cardPara.innerHTML=cardPara.innerHTML+data.description;
                 
             }
             break;
