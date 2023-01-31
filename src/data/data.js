@@ -33,7 +33,7 @@ const profileImage={
 
 const profile={
     profileHeading:"Profile",
-    profile:[
+    section:[
         {
             heading:"About Me",
             paragraph:"I'm Sanika Pareek, a 21 year old graduate at MIT Academy of Engineering from Pune, Maharashtra. I'm certified for Azure AI 900 and worked on tools like Fusion 360 and Matlab. I have interest in the field of Artifical Intelligence and Machine Learing."
