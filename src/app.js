@@ -7,6 +7,7 @@ import { profile, project,education} from "./data/data.js";
 import { Education } from "./components/education.js";
 import { Cards } from "./components/cards.js";
 import { Project } from "./components/projects.js";
+import { Achievement } from "./components/achievements.js";
 
 const headerComponent=new Header();
 headerComponent.mount(document.getElementById("root"));
@@ -32,6 +33,8 @@ for(let i=0;i<education.educationInfo.length;i++){
     const educationCard=new Cards();
     educationCard.mount(document.querySelector(".educationCards"),education.educationInfo[i],"education");
 }
+const achievementComponent=new Achievement();
+achievementComponent.mount(document.getElementById("root"));
 
 const projectComponent=new Project();
 projectComponent.mount(document.getElementById("root"));

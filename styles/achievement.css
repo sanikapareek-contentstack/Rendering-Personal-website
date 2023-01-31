@@ -1,0 +1,20 @@
+.achievementContainer{
+    padding: 30px;
+    background-color: rgb(248, 246, 244);
+    margin-top: 30px;
+    
+}
+
+.achievementHeading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.achievementList{
+    padding-left: 50px;
+}
+
+.achievementList li{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
