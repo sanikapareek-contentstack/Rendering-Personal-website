@@ -30,7 +30,7 @@ educationComponent.mount(document.getElementById("root"))
 
 for(let i=0;i<education.educationInfo.length;i++){
     const educationCard=new Cards();
-    educationCard.mount(document.getElementById("educationCards"),education.educationInfo[i],"education");
+    educationCard.mount(document.querySelector(".educationCards"),education.educationInfo[i],"education");
 }
 
 

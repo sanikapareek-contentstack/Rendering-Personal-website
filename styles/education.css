@@ -1,0 +1,49 @@
+
+.educationContainer{
+    text-align: center;
+    margin-top:40px
+}
+
+.educationCards{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.educationCard{
+    width: 350px;
+    height: 350px;
+    margin: 1%;
+    background-color: rgb(247, 244, 244);
+    border-radius: 20px;
+}
+
+.educationCardHeader{
+    height: 100px;
+    width: 350px;
+    background-color: gray;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px 20px 0 0 ;
+    color: white;
+}
+
+.educationCard p{
+    text-align: left;
+    padding: 30px;
+    font-size: 1.2rem;
+}
+
+.educationCard:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+
+@media screen and (min-width:957px) and (max-width:1120px) {
+   .educationCard,.educationCardHeader{
+        width: 300px;
+   }
+   
+   
+}

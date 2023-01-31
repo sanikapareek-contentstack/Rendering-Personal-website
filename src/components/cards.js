@@ -15,10 +15,10 @@ class Cards extends Component{
                 cardHeader.classList.add(`${cardFor.toLowerCase()}CardHeader`);
                 cardHeading.innerText=data.educationHeading;
                 cardPara.innerHTML=
-                    `<strong>${data.institutionHeading}</strong>:${data.institutionHeading}<br>
-                    <strong>${data.streamHeading}</strong>:${data.streamType}<br>
-                    <strong>${data.marksType}</strong>:${data.marks}<br>
-                    <strong>${data.yearHeading}</strong>:${data.year}<br>
+                    `<strong>${data.institutionHeading}</strong>: ${data.institutionName}<br><br>
+                    <strong>${data.streamHeading}</strong>: ${data.streamType}<br><br>
+                    <strong>${data.marksType}</strong>: ${data.marks}<br><br>
+                    <strong>${data.yearHeading}</strong>: ${data.year}<br><br>
                     `;
                 
             }
@@ -30,7 +30,7 @@ class Cards extends Component{
                 cardPara.innerHTML=`<strong>${data.skillHeading}</strong>: `;
                 for(let i=0;i<data.skills.length;i++){
                     if((data.project.skills)-i-1===0){
-                        cardPara.innerHTML=cardPara.innerHTML+`${data.skills[i]} <br> `;
+                        cardPara.innerHTML=cardPara.innerHTML+`${data.skills[i]} <br><br>`;
                     }else{
                         cardPara.innerHTML=cardPara.innerHTML+`${data.skills[i]}, `
                     }

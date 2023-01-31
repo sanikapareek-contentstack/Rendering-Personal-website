@@ -7,7 +7,7 @@ class Education extends Component{
         const educationHeading=document.createElement("h1");
         const educationCards=document.createElement("div");
 
-        educationContainer.classList.add("educationCards");
+        educationContainer.classList.add("educationContainer");
         educationContainer.id="education";
         educationCards.classList.add("educationCards");
         
