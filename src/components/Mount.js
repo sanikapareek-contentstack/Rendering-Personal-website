@@ -1,11 +1,11 @@
 class Component{
-    mount(el,data){
+    mount(el,data,cardFor){
         if(data){
             if(el){
-                el.appendChild(this.render(data));
+                el.appendChild(this.render(data,cardFor));
                 return;
             }
-            document.body.appendChild(this.render(data));
+            document.body.appendChild(this.render(data,cardFor));
             return
         }
         if(el){
