@@ -19,8 +19,7 @@ profileComponent.mount(document.getElementById("root"));
 
 for(let i=0;i<profile.section.length;i++){
     const section=new ProfileSection();
-    console.log(profile.section[i])
-    section.mount(document.getElementById("profileContainer"),profile.section[i]);
+    section.mount(document.querySelector(".profileContainer"),profile.section[i]);
 }
 
 

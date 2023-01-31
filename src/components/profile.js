@@ -5,18 +5,16 @@ import Component from './Mount.js';
 class Profile extends Component{
     render(){
         const profileContainer=document.createElement("div");
+        const profileSection=document.createElement("div");
         const profileHeading=document.createElement("h1");
-        const githubIcon=document.createElement("i");
-        const githubLink=document.createElement("a");
-        const linkdinIcon=document.createElement("i");
-        const linkdinLink=document.createElement("a");
+      
 
-        profileContainer.id="profileContainer";
+        profileContainer.id="profile";
+        profileSection.classList.add("profileContainer");
         profileHeading.innerText=profile.profileHeading;
 
         profileContainer.appendChild(profileHeading);
-        // const aboutMe=new ProfileSection();
-        // profileContainer.appendChild(aboutMe);
+        profileContainer.appendChild(profileSection);
 
         return profileContainer;
 
