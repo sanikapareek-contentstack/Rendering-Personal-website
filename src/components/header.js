@@ -1,4 +1,4 @@
-import data from '../../data/header.json' assert {type :'json'};
+import { header } from '../data/data.js';
 import Component from './Mount.js';
 class Header extends Component{
     
@@ -49,12 +49,12 @@ class Header extends Component{
             (headerNavArr[i].href).appendChild(headerNavArr[i].title);
         }
         
-        headerLink.href=data['logo-href'];
-        headerImage.src=data['logo'];
+        headerLink.href=header.logo_href;
+        headerImage.src=header.logo;
         
         for(let i=0;i<headerNavArr.length;i++){
-            (headerNavArr[i].title).innerText=data.nav[i].title;
-            (headerNavArr[i].href).href=data.nav[i].href;
+            (headerNavArr[i].title).innerText=header.nav[i].title;
+            (headerNavArr[i].href).href=header.nav[i].href;
         }
 
         return headerContainer;

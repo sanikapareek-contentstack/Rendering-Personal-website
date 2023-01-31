@@ -1,4 +1,4 @@
-import data from '../../data/banner.json' assert {type :'json'};
+import { banner } from '../data/data.js';
 import Component from './Mount.js';
 
 
@@ -9,13 +9,13 @@ class Banner extends Component{
         const bannerDescription=document.createElement("h2");
 
         bannerContainer.classList.add("bannerContainer");
-        bannerContainer.style.backgroundImage=`url(${data.bannerBackgroundImg})`;
+        bannerContainer.style.backgroundImage=`url(${banner.bannerBackgroundImg})`;
 
         bannerContainer.appendChild(bannerHeading);
         bannerContainer.appendChild(bannerDescription);
 
-        bannerHeading.innerText=data.name;
-        bannerDescription.innerText=data.position;
+        bannerHeading.innerText=banner.name;
+        bannerDescription.innerText=banner.position;
 
         return bannerContainer;
         

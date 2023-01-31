@@ -1,7 +1,9 @@
 {
     "profileHeading":"Profile",
-    "AboutMe":"I'm Sanika Pareek, a 21 year old graduate at MIT Academy of Engineering from Pune, Maharashtra. I'm certified for Azure AI 900 and worked on tools like Fusion 360 and Matlab. I have interest in the field of Artifical Intelligence and Machine Learing.",
-    "Details":[
+    "aboutMeHeading":"About Me",
+    "aboutMeDescription":"I'm Sanika Pareek, a 21 year old graduate at MIT Academy of Engineering from Pune, Maharashtra. I'm certified for Azure AI 900 and worked on tools like Fusion 360 and Matlab. I have interest in the field of Artifical Intelligence and Machine Learing.",
+    "detailsHeading":"Details",
+    "details":[
         {
             "detailName":"Skills",
             "detailValue":["Java","MySQL"]
