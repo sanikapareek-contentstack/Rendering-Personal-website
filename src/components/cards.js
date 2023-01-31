@@ -5,7 +5,7 @@ class Cards extends Component{
 
         const cardContainer=document.createElement("div");
         const cardHeader=document.createElement("div");
-        const cardHeading=document.createElement("h1");
+        const cardHeading=document.createElement("h2");
         const cardPara=document.createElement("p");
 
         
