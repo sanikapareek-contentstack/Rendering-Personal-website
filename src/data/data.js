@@ -16,7 +16,7 @@ const header={
         },
         {
             "title":"Projects",
-            "href":"#projects"
+            "href":"#project"
         }
     ]
 }

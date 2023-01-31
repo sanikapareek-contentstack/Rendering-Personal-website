@@ -8,6 +8,7 @@ class Achievement extends Component{
         const achievementList=document.createElement("ul");
 
         achievementContainer.classList.add("achievementContainer");
+        achievementContainer.id="achievements";
         achievementHeading.classList.add("achievementHeading")
         achievementList.classList.add("achievementList");
         
