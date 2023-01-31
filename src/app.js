@@ -4,16 +4,18 @@ import { ProfileImage } from "./components/profileImage.js";
 import { Profile } from "./components/profile.js";
 import { ProfileSection } from "./components/profileSection.js";
 import { profile } from "./data/data.js";
+import { Education } from "./components/education.js";
+import { education } from "./data/data.js";
 import { Cards } from "./components/cards.js";
 
-const header=new Header();
-header.mount(document.getElementById("root"));
+const headerComponent=new Header();
+headerComponent.mount(document.getElementById("root"));
 
-const banner=new Banner();
-banner.mount(document.getElementById("root"));
+const bannerComponent=new Banner();
+bannerComponent.mount(document.getElementById("root"));
 
-const profileImg=new ProfileImage()
-profileImg.mount(document.getElementById("root"));
+const profileImgComponent=new ProfileImage()
+profileImgComponent.mount(document.getElementById("root"));
 
 const profileComponent=new Profile();
 profileComponent.mount(document.getElementById("root"));
@@ -23,8 +25,13 @@ for(let i=0;i<profile.section.length;i++){
     section.mount(document.querySelector(".profileContainer"),profile.section[i]);
 }
 
-const educationCards=new Cards();
-educationCards.mount(document.getElementById("root"))
+const educationComponent=new Education();
+educationComponent.mount(document.getElementById("root"))
+
+for(let i=0;i<education.educationInfo.length;i++){
+    const educationCard=new Cards();
+    educationCard.mount(document.getElementById("educationCards"),education.educationInfo[i],"education");
+}
 
 
 

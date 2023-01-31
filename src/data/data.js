@@ -80,8 +80,8 @@ const profile={
 }
 
 const education={
-    eduactionHeading:"Education",
-    eduactionInfo:[{
+    educationHeading:"Education",
+    educationInfo:[{
         educationHeading:"B.Tech",
         institutionHeading:"Name of College",
         institutionName:"MIT Academy of Engineering,Pune",
